@@ -1,6 +1,9 @@
 body{
-    margin:30px;
+    background-color:#F4F1DE;
+    margin:0;
 }
+
+/*menu*/
 
 ol, ul{
     list-style:none;
@@ -14,39 +17,75 @@ header{
     display:flex;
     align-items:center;
     justify-content:space-between;
-    background-color: burlywood;
+    background-color: #D8E2DC;
 }
 
+/*BOTON CORAZON EN MENU */
+
 header a i{
-    color:rgb(56, 109, 155);
+    color: #58517A;
     font-size: 30px;
     padding:20px;
 }
 
 nav ul{
     display:flex;
-    gap: 2em;
+    gap: 4em;
     padding-right:18px;
 }
 
 header nav ul li a{
-    color:aliceblue;
-    font-size:110%;
+    color:#58517A;
+    font-size:22px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold; /*texto negrita*/
+}
+a:hover{ /*cuando el mouse esta sobre..*/
+    font-size:25px;
 }
 
+/* ACERCA DE NOSOTROS */
+
+.acerca-de {
+    max-width: 800px; /* Establecer un ancho máximo para el contenido */
+    margin-right: 100px; /* Agregar un poco de espacio entre los elementos */
+}
+.acerca-imagen {
+    max-width: 400px; /* Establecer un ancho máximo para la imagen */
+}
 .seccion-1{
-    display:flex;
-    flex-direction:inline-center;
-    justify-content:center;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    text-align: center; /* Alinear el texto al centro dentro de la sección */
+    padding: 20px; /* Agregar un poco de espacio alrededor del contenido */
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.4; /*interlineado*/
 }
 
-.seccion-2{
-    display:flex;
-    flex-direction:inline-center;
-    justify-content:center;
-    align-items: center;
+.seccion-1 h1{
+    color: #58517A;
 }
+
+h1{
+    font-size: 40px;
+}
+
+.parrafo1, .parrafo2{
+    font-size: 25px;
+    color: #9E7E66;
+}
+
+
+/*IMAGEN CARRUSEL */
+
+.seccion-2 img {
+    width: 100%; /* Hacer que la imagen ocupe todo el ancho de la sección */
+    max-width: 100%; /* Asegurarse de que la imagen no se extienda más allá de su tamaño natural */
+    height: auto; /* Mantener la proporción de la imagen */
+    MARGIN:30PX;
+}
+
 
 footer{
     display: flex;
@@ -63,9 +102,39 @@ footer{
     position: fixed;
     bottom: 0;
     right: 0;
-    color: tomato;
-    font-size: 30px;
+    color: #58517A;
+    font-size: 40px;
     padding: 20px;
+}
+
+/*PRODUCTOS*/
+.seccion-3{
+    display: flex;
+    justify-content: space-around;
+}
+
+.seccion-3 h2{
+    color: #58517A;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+.seccion-3 img{
+    max-width: 450px;
+    border-radius: 6px;
+}
+
+.seccion-3 p{
+    color: #9E7E66;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    max-width: 360px;
+}
+
+.seccion-3 h2:hover{
+    font-size: 40px;
 }
 
 /* formulario */
@@ -112,7 +181,7 @@ footer{
 }
 
 .final{
-    background-color:burlywood;
+    background-color:#D8E2DC;
     width: 100%;
     padding: 30px;
     line-height: 3;
@@ -143,6 +212,3 @@ footer{
     color:burlywood;
 }
 
-.greeting{
-    background-color: blueviolet;
-}
